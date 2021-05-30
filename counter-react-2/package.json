@@ -1,0 +1,54 @@
+{
+  "name": "counter-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@nomiclabs/buidler-ethers": "^2.0.2",
+    "@opengsn/gsn": "^2.1.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@toruslabs/torus-embed": "^1.10.14",
+    "authereum": "^0.1.14",
+    "buidler": "^0.2.8",
+    "caniuse-lite": "^1.0.30001228",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.2.0",
+    "fortmatic": "^2.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "run-with-testrpc": "^0.3.1",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts src/build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "buidler --network localhost deploy && buidler export-addresses --network localhost",
+    "evm-with-gsn": "run-with-testrpc --networkId 1337 --chainId 1337 'gsn start' "
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.4.7",
+    "@nomiclabs/buidler-waffle": "^2.1.0"
+  }
+}
